@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Elements Reference - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header">
+				</header> 
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="portofolio.html">Portfolio</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/alexandru-mincu-3959301b9/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/drumin4" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Leave Management Studio</h1>
+								</header>
+
+								<!-- Text stuff -->
+									<h2>Brief summary</h2>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;The purpose of this program is to let employers manage the leave requests of their employees in a <b>fast</b> and <b>easy</b> fashion.
+									LeaveMS is strictly a <b>windows-only program</b> and it is meant to conduct all leave requests virtually, simplifying the whole process while 
+									making it more accessible.<br/><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;Note: if you wish to test this program yourself, I'll leave here an employee, respectively an admin's username and password for you to use:<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;User - Username: "Michael Steward" / Password: "33116"<br/>
+									&nbsp;&nbsp;&nbsp;&nbsp;Admin - Username: "Admin" / Password: "adminpassword"</p>
+									<hr />
+									<h2>Walkthrough</h2>
+									<p>
+										<b>1) Login</b> <br />
+										&nbsp;&nbsp;&nbsp;&nbsp;The program is based on individual accounts, which are stored in a database built in MSSQL.<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;Because of the nature of this program, I chose to design it with only the option to login available. 
+										The creation of the accounts can and should be done only by the admin.<br><br>
+										LeaveMS can have two types of users: employer (the admin) and employee.
+									</p>
+									<img src="https://i.postimg.cc/6QCGSCSL/Login.png" alt="login picture" />
+									
+									<hr />
+
+									<p>
+										<b>2) Employee Mode</b> <br /><br>
+										If you were to login as an employee, you would be met with the page presented below.
+									</p>
+									
+									<img src="https://i.postimg.cc/m229pzBK/Employee-Page.png" width="90%" alt="employee-page" />
+									<br />
+									<br />
+									<p>Each employee is naturally allowed to have more than one request, and in order to ask for a new leave, the Request button on the left panel needs to be pressed:</p>
+									
+									<img src="https://i.postimg.cc/SsYG1X4W/Request-Button.png" alt="request-button" />
+
+									<br />
+									<br />
+									<p>Here, the employees have to specify the reason for their leave, the date when it should start and the date when they want it to end. 
+										In order to send the request to the admin, the submit button has to be pressed. The submission will automatically be listed with a 
+										"Pending" status until an action will take place from the admin.</p>
+									<img src="https://i.postimg.cc/0j6hf5W3/Leave-Request.png" alt="leave-request" />
+
+									<hr />
+
+									<p>
+										<b>3) Admin Mode <br>A) Employees Management Page</b> <br /><br>
+										If you were to login as the admin, you would be met with the page presented below.
+									</p>
+
+									<img src="https://i.postimg.cc/d0w2mWNc/Employees-Management-Page.png" width="90%" alt="employees-management-page" />
+									<br />
+									<br />
+									<p>It's worth noting that clicking on any row in the table will automatically fill the textboxes from the upper side of the page. This is done in order to make Editing easier.<br>
+										The Save option is pretty much used to create new accounts for employees (The employee's name is used as the username).<br>
+										Deleting employees here will result in their removal from the database.
+									</p>
+									
+									<p>
+										<b>B) Leaves Management Page</b> <br /><br>
+										To see the leave requests, the Leaves button from the left panel must be clicked.
+									</p>
+
+									<img src="https://i.postimg.cc/ncYcQZ52/Leave-Button.png" alt="leave-button" />
+									<br />
+									<br />
+
+									<p>
+										This page functions in a similar way to the previous one, including the table filling up the textboxes above 
+										when a row inside it is clicked. It's an important detail to notice, as this is the page where admins can Accept 
+										or Reject leave requests. That is done by changing the status and clicking the Edit button. And Editing is enabled 
+										ONLY when the textboxes are filled, which is why it's pretty handy to just select a request directly from the table.
+										<br><br>
+										The Save and Delete buttons function in a similar manner to how they do in the Employees page (the previous one).
+									</p>
+									
+									<img src="https://i.postimg.cc/hPCg18FY/Leaves-Management-Page.png" width="90%" alt="leave-management-page" />
+									<br><br>
+									<p>
+										As you can see, there is one additional feature available for this page, which is right above the table. 
+										You can filter all the requests based on their status. Say if you were to select "Pending" in the search bar, 
+										only the activities with this status would show up.
+										<br><br>
+										Also, the Refresh button is there in case you want to see all requests again, regardless of their status.
+									</p>
+
+									<hr />
+
+									<p>
+										<b>C) Categories Management Page</b> <br /><br>
+										One important detail not mentioned yet is that the reason for taking a leave must be selected from a list,
+										which is personally provided by the admin. <br><br>
+										Here is an example of such list:
+									</p>
+
+									<img src="https://i.postimg.cc/0y9y25YY/Listof-Leaving-Reasons.png" alt="listof-leaving-reasons" />
+									<br />
+									<br />
+									
+									<p>
+										<b>The admin can Add/Remove/Edit the reasons for taking a leave in the Category page, which is selectable 
+											through the Category button from the left panel.</b> <br />
+									</p>
+
+									<img src="https://i.postimg.cc/4NPmchNL/Categories-Button.png" alt="categories-button" />
+									<br>
+									<br>
+
+									<p>
+										The process doesn't function much differently here either. You have one single textbox on the upper side of 
+										the page, where you can type in a new leaving reason and then save it.
+									</p>
+									
+
+									<p>
+										You can also delete/edit an leaving reason after having one selected directly from the table.
+									</p>
+
+									<img src="https://i.postimg.cc/PJq0FcY8/Categories-Management-Page.png" width="90%" alt="categories-management-page" />
+									<br>
+									<br>
+
+									<p>
+										Last but not least, to exit TimeEclipse, you first have to sign out, which you can do by simply pressing 
+										the Sign Out button on the upper-right side of the screen.
+									</p>
+
+									<img src="https://i.postimg.cc/053tsbq4/Logout-Button.png" alt="logout-button" />
+
+									<hr />
+
+									<h2>FAQ</h2>
+									
+									<p><span class="image left"><img src="https://i.postimg.cc/8cqvpnqv/performance-Image2.png" alt="" /></span><h3>What inspired you to build Time Eclipse?</h3>&nbsp;&nbsp;&nbsp;&nbsp;Although I have to admit this project wasn't a personal idea, I chose to create it because of its apparent utility in the professional area.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;The main purpose was to get myself into building something even more practical to use in the outside world. The whole process has been a valuable source of learning overall.</p>
+									
+									<p>
+										<br /><br><h3>How was the process of building Time Eclipse like?</h3><span class="image right"><img src="https://i.postimg.cc/d1jNTGqD/thinking-Image.png" alt="" /></span>&nbsp;&nbsp;&nbsp;&nbsp;This wasn't the first project I've built, but I still had a lot to learn from this experience. From perfecting some of my already developed skills, to filling my knowledge gaps and overcoming certain weaknesses, I have become more steady in my approaches as a programmer.
+										<br><br>&nbsp;&nbsp;&nbsp;&nbsp;When building up a virtual product, the process is rarely a straight line and I've grown to like the dynamism of constantly adapting and rethinking my strategies as I code. It is a collection of increasing, decreasing, and neutral slopes along the way. And surely LeaveMS hasn't been an exception.
+									</p>
+									
+									<p><br /><h3>What would you add/change about your program if you were to do it all over again?</h3><span class="image left"><img src="https://i.postimg.cc/MGv6Wb80/repair-Image.png" alt="" /></span>
+										&nbsp;&nbsp;&nbsp;&nbsp;I'll list below 3 features that I would like to implement for this program:<br><br>
+
+										- The "TBD" (To be debated) status, for cases when negociation between the employer and the employee needs to be taken regarding the leave request.<br>
+										- An option for the admin to add new admins through the interface.<br>
+										- Make the password self-generated for each employee and impose certain conditions to make each one of them strong.</p>
+
+									<hr />
+
+									<h2>Some of the best realizations I have achieved are:</h2>
+
+									<p> - I further developed my analytical mindset. I also kept repeating positive habits such as asking myself the right questions and searching for the right information to solve unexpected problems when needed.
+										<br><br>
+										- I have become more confident in my skills and no more did I feel overpowered by troubling roadblocks when they appeared. Persistence and testing small pieces of code at a time helped me identify the source of each exception/bug that showed up, which made me overcome them much easier.
+										<br><br>
+										-I learnt the value of taking a break at the right moment. It's surprising how easily solutions come after taking a breather.
+									</p>
+									
+								
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section class="alt">
+							<h3>Address</h3>
+							<p>Ramnicu Valcea, Romania <br />
+								(Willing to relocate)</p>
+						</section>
+						<section>
+							<h3>Phone</h3>
+							<p><a href="#">+40756950563</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">alexandrumincu237@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/alexandru-mincu-3959301b9/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://github.com/drumin4" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				
+				<ul></ul>>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
